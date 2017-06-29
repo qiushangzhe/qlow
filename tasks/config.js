@@ -31,7 +31,7 @@ module.exports = function() {
 
         fileList: {
             indexFile: function() {
-                return path.join(baseDir, srcDirName, "index.html")
+                return path.join(baseDir, srcDirName,viewsDirName, "index.html")
             },
             appFile: function() {
                 return path.join(baseDir, srcDirName, "app.js")
