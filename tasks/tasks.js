@@ -1,2 +1,4 @@
 var requireDir = require('require-dir');
-var script = requireDir('./script');
+var dir1 = requireDir('./script');
+var dir2 = requireDir('./toolsInfo');
+var dir3 = requireDir('./initProject');
