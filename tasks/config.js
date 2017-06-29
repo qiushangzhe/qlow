@@ -8,6 +8,7 @@ module.exports = {
     styleDirName : 'style',
     libDirName : 'libs',
     pictureDirName : 'images',
+    viewsDirName : 'views',
     //src
     getSrcPath : function(){
         var srcPath = path.join(this.baseDir,this.srcDirName);
@@ -16,6 +17,11 @@ module.exports = {
     //script
     getScriptDirName:function(){
         var srcPath = path.join(this.baseDir,this.srcDirName,this.scriptDirName);
+        return srcPath;
+    },
+    //views
+    getViewsDirName:function(){
+        var srcPath = path.join(this.baseDir,this.srcDirName,this.viewsDirName);
         return srcPath;
     },
     //style
