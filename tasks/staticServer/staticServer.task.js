@@ -1,15 +1,14 @@
 var gulp = require('gulp');
 var staticServer = require('browser-sync').create();
-var config = require('../config');
+var config = require('../config')();
 //开启一个静态服务器
 gulp.task('open-static-server', function() {
     staticServer.init({
         server: {
-            baseDir: config.getDistPath(),
+            baseDir: config.dirList.getDistPath(),
             middleware: [
             // 中间件。。。。。。可设置多个。
                 function(req, res, next) {
-
                     // console.log("Hi from middleware");
                     next();
                 }
@@ -17,7 +16,7 @@ gulp.task('open-static-server', function() {
         },
         //监听文件
         files:[
-            config.getDistPath()
+            config.dirList.getDistPath()
         ],
         logPrefix: "super-qlow",//这里是log的前缀
         logLevel: "info",//debug-所有信息 or info-部分信息 or silent-啥也不显示
