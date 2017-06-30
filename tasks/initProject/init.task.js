@@ -13,7 +13,7 @@ gulp.task('init', function() {
     //创建相关文件
     for (var i in config.fileList) {
         if (typeof config.fileList[i] == 'function') {
-            if (!fs.existsSync(config.fileList[i]())) {
+            if (!fs.existsSync(config.fileList[i]().path)) {
                 var buffer = '';
                 if(config.fileList[i]().template){
                     buffer = fs.readFileSync(config.fileList[i]().template);
