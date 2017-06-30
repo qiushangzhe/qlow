@@ -14,7 +14,11 @@ gulp.task('init', function() {
     for (var i in config.fileList) {
         if (typeof config.fileList[i] == 'function') {
             if (!fs.existsSync(config.fileList[i]())) {
-                fs.writeFileSync(config.fileList[i](),'','utf8');
+                var buffer = '';
+                if(config.fileList[i]().template){
+                    buffer = fs.readFileSync(config.fileList[i]().template);
+                }
+                fs.writeFileSync(config.fileList[i]().path,buffer,'utf8');
             }
         }
     }

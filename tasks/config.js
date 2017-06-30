@@ -31,11 +31,30 @@ module.exports = function() {
 
         fileList: {
             indexFile: function() {
-                return path.join(baseDir, srcDirName,viewsDirName, "index.html")
+                return {
+                    path : path.join(baseDir, srcDirName,viewsDirName, "index.html"),
+                    template : path.join(__dirname,'initProject/template','index.template.html'),
+                }
             },
             appFile: function() {
-                return path.join(baseDir, srcDirName, "app.js")
+                return {
+                    path:path.join(baseDir, srcDirName, "app.js"),
+                    template : path.join(__dirname,'initProject/template','app.template.js'),
+                }
+            },
+            styleFile:function(){
+                return {
+                    path:path.join(baseDir, srcDirName,styleDirName, "main.scss"),
+                    template : ''
+                }
+            },
+            scriptFile:function(){
+                return {
+                    path:path.join(baseDir, srcDirName,scriptDirName, "main.js"),
+                    template : ''
+                }
             }
+
         },
         dirList: {
             //src

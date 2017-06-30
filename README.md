@@ -9,3 +9,6 @@
 - open-static-server 打开一个静态服务器
 - js 多个js文件打包成一个的功能 支持amd 和 cmd 以及 es6
 - movePage 移动html
+
+## change
+- init的时候默认生成一个scss文件和一个js文件 在html中引入
