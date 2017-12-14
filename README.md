@@ -1,5 +1,13 @@
 ## 1（迁移typescript开发环境）
-完成node ts环境搭建。
+完成node ts 开发环境迁移
+添加npm全局安装并执行功能。
+添加yargs功能。
+
+### 开发
+1. git clone 并 npm install
+2. npm link 连接到全局环境
+3. 在测试项目中执行qlow
+
 
 
 
