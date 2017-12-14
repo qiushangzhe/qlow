@@ -1,3 +1,8 @@
+## 1（迁移typescript开发环境）
+完成node ts环境搭建。
+
+
+
 ## 版本1 待优化
 
 - 把项目clone下来以后 npm install

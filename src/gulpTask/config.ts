@@ -1,7 +1,7 @@
 var path = require('path');
-module.exports = function() {
+export function Config() {
     //当前项目路径
-    var baseDir = path.join(__dirname, '..');
+    var baseDir = path.join(process.cwd());
     var srcDirName = 'src';
     var scriptDirName = 'scripts';
     var distDirName = 'dist';
@@ -28,30 +28,29 @@ module.exports = function() {
                     return viewsDirName;
             };
         },
-
         fileList: {
             indexFile: function() {
                 return {
-                    path : path.join(baseDir, srcDirName,viewsDirName, "index.html"),
-                    template : path.join(__dirname,'initProject/template','index.template.html'),
+                    path: path.join(baseDir, srcDirName, viewsDirName, "index.html"),
+                    template: path.join(__dirname, '../../src/template', 'index.template.html'),
                 }
             },
-            appFile: function() {
+            // appFile: function() {
+            //     return {
+            //         path: path.join(baseDir, srcDirName, "app.js"),
+            //         template: path.join(__dirname, 'initProject/template', 'app.template.js'),
+            //     }
+            // },
+            styleFile: function() {
                 return {
-                    path:path.join(baseDir, srcDirName, "app.js"),
-                    template : path.join(__dirname,'initProject/template','app.template.js'),
+                    path: path.join(baseDir, srcDirName, styleDirName, "main.scss"),
+                    template: ''
                 }
             },
-            styleFile:function(){
+            scriptFile: function() {
                 return {
-                    path:path.join(baseDir, srcDirName,styleDirName, "main.scss"),
-                    template : ''
-                }
-            },
-            scriptFile:function(){
-                return {
-                    path:path.join(baseDir, srcDirName,scriptDirName, "main.js"),
-                    template : ''
+                    path: path.join(baseDir, srcDirName, scriptDirName, "main.js"),
+                    template: ''
                 }
             }
 
@@ -82,7 +81,7 @@ module.exports = function() {
                 var srcPath = path.join(baseDir, srcDirName, libDirName);
                 return srcPath;
             },
-            //lib
+            //pic
             getPicturePath: function() {
                 var srcPath = path.join(baseDir, srcDirName, pictureDirName);
                 return srcPath;
