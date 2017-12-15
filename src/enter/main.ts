@@ -2,6 +2,8 @@
 import * as yargs from 'yargs';
 import { initProject } from './command/initProject';
 import { Server } from './command/server';
+import { Less } from './command/less';
+import { Start } from './command/start';
 /**
  * 指令:qlow init --type=xxx     
  * 说明:创建项目
@@ -10,6 +12,8 @@ import { Server } from './command/server';
  */
 regist(new Server());
 regist(new initProject());
+regist(new Less());
+regist(new Start());
 /**
  * 运行
  */

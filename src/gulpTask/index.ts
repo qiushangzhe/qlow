@@ -1,8 +1,9 @@
 import './initProject/init.task';
-import './toolsInfo/bbd.task';
+import './tools/bbd.task';
 import './staticServer/staticServer.task'
+import './style/style.task'
 import * as gulp from 'gulp';
-
+gulp.task('dev',['watch-less','open-static-server']);
 export const task = {
     run : (command) =>{
         gulp.start(command);

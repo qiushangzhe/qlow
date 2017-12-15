@@ -29,6 +29,7 @@
     "boxen": "^1.3.0",
     "browser-sync": "^2.18.13",
     "gulp-less": "^3.3.2",
+    "gulp-notify": "^3.0.0",
     "yargs": "^10.0.3"
   }
 }
