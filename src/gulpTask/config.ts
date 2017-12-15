@@ -1,7 +1,7 @@
 var path = require('path');
 export class Config {
     // 当前执行qlow工具的目录
-    private baseDir: string = path.join(process.cwd());
+    baseDir: string = path.join(process.cwd());
     // src的文件夹名
     private srcDirName: string = 'src';
     private scriptDirName: string = 'scripts';
@@ -30,14 +30,14 @@ export class Config {
         };
     };
 
-    public fileList():object{
+    public fileList():any{
         const list = {
             indexFile: {
                 path: path.join(this.baseDir, this.srcDirName, this.viewsDirName, "index.html"),
                 template: path.join(__dirname, '../../src/template', 'index.template.html'),
             },
             styleFile: {
-                path: path.join(this.baseDir, this.srcDirName, this.styleDirName, "main.scss"),
+                path: path.join(this.baseDir, this.srcDirName, this.styleDirName, "main.less"),
                 template: ''
             },
             scriptFile: {
@@ -48,7 +48,7 @@ export class Config {
         return list;
     }
 
-    public dirList():object{
+    public dirList():any{
         const list = {
             src : path.join(this.baseDir, this.srcDirName),
             script : path.join(this.baseDir, this.srcDirName, this.scriptDirName),

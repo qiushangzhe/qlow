@@ -11,6 +11,15 @@ export abstract class command {
     // 例子
     example_1: string;
     example_2: string;
+    commandObj:any;
     // 执行函数
     abstract handler(argv);
+    init(){
+        this.commandObj = {
+            command:this.command,
+            aliases:this.aliases,
+            describe:this.describe,
+            handler:this.handler
+        }
+    }
 }

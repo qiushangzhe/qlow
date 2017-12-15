@@ -2,6 +2,8 @@
 完成node ts 开发环境迁移
 添加npm全局安装并执行功能。
 添加yargs功能。
+## 2 (init项目，静态服务开启功能)
+
 
 ### 开发
 1. git clone 并 npm install

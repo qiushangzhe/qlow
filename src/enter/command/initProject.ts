@@ -7,7 +7,7 @@ export class initProject extends command{
     public commandObj:yargs.CommandModule;
     constructor() {
         super();
-        this.aliases = ['type'];
+        // this.aliases = ['type'];
         this.command = "init [options]";
         this.describe = "初始化一个项目";
         this.example_1 = "$0 init";
@@ -17,15 +17,7 @@ export class initProject extends command{
     }
 
     handler(argv: any) {
+        task.run('bbd');
         task.run('init');
-    }
-
-    init(){
-        this.commandObj = {
-            command:this.command,
-            aliases:this.aliases,
-            describe:this.describe,
-            handler:this.handler
-        }
     }
 }
