@@ -3,6 +3,9 @@
 添加npm全局安装并执行功能。
 添加yargs功能。
 ## 2 (init项目，静态服务开启功能)
+## 3 
+- 完成基本的html css 项目开发时的工具流构建
+- 目前集成less开发环境
 
 
 ### 开发
@@ -27,3 +30,8 @@
 
 ## change
 - init的时候默认生成一个scss文件和一个js文件 在html中引入
+
+
+# 使用说明
+1. npm install https://github.com/qiushangzhe/qlow.git -g 
+

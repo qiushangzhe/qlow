@@ -3,7 +3,6 @@ import * as less from 'gulp-less'
 import * as autoprefixer from 'gulp-autoprefixer';
 import * as concat from 'gulp-concat';
 import { error } from '../tools/error';
-console.log(error);
 require('colors');
 gulp.task('less', () => {
     return gulp.src('src/style/*.less')

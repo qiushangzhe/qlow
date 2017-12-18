@@ -15,6 +15,8 @@ gulp.task('open-static-server', function () {
                 }
             ]
         },
+        ui:false,
+        startPath: "views/",
         //监听文件
         files: [
             config.dirList().dist,
