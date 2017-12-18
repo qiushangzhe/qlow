@@ -33,5 +33,9 @@
 
 
 # 使用说明
-1. npm install https://github.com/qiushangzhe/qlow.git -g 
+1. npm install https://github.com/qiushangzhe/qlow.git -g --registry https://registry.npm.taobao.org
+
+2. 创建项目目录。然后控制台定位到目标目录
+3. 执行 `qlow init` 初始化项目结构
+4. 执行 `qlow start` 开始开发
 
