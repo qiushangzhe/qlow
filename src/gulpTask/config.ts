@@ -10,6 +10,7 @@ export class Config {
     private libDirName: string = 'libs';
     private pictureDirName: string = 'images';
     private viewsDirName: string = 'views';
+    private templateDirName : string = 'templates';
 
     public getName(name): string {
         switch (name) {
@@ -53,6 +54,7 @@ export class Config {
             src : path.join(this.baseDir, this.srcDirName),
             script : path.join(this.baseDir, this.srcDirName, this.scriptDirName),
             view : path.join(this.baseDir, this.srcDirName, this.viewsDirName),
+            template : path.join(this.baseDir,this.srcDirName,this.templateDirName),
             style : path.join(this.baseDir, this.srcDirName, this.styleDirName),
             lib : path.join(this.baseDir, this.srcDirName, this.libDirName),
             pic : path.join(this.baseDir, this.srcDirName, this.pictureDirName),

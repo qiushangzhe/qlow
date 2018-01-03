@@ -13,6 +13,7 @@ class Config {
         this.libDirName = 'libs';
         this.pictureDirName = 'images';
         this.viewsDirName = 'views';
+        this.templateDirName = 'templates';
     }
     getName(name) {
         switch (name) {
@@ -56,6 +57,7 @@ class Config {
             src: path.join(this.baseDir, this.srcDirName),
             script: path.join(this.baseDir, this.srcDirName, this.scriptDirName),
             view: path.join(this.baseDir, this.srcDirName, this.viewsDirName),
+            template: path.join(this.baseDir, this.srcDirName, this.templateDirName),
             style: path.join(this.baseDir, this.srcDirName, this.styleDirName),
             lib: path.join(this.baseDir, this.srcDirName, this.libDirName),
             pic: path.join(this.baseDir, this.srcDirName, this.pictureDirName),
