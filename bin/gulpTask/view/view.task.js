@@ -9,7 +9,7 @@ const config = new config_1.Config();
 gulp.task('view-move', ['rendering-html'], function () {
     return gulp
         .src('src/views/*.html')
-        .pipe(gulp.dest('dist/views'));
+        .pipe(gulp.dest('dist/'));
 });
 gulp.task('watch-page', ['rendering-html'], function () {
     return gulp.watch('src/views/**', function (info) {
@@ -33,7 +33,7 @@ gulp.task('watch-page', ['rendering-html'], function () {
                     indent_with_tabs: false
                 }
             }))
-                .pipe(gulp.dest('./dist/views'));
+                .pipe(gulp.dest('./dist/'));
         }
         else if (info.type == 'added') { }
     });
