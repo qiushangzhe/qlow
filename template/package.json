@@ -1,0 +1,19 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "zepto": "^1.2.0"
+  },
+  "devDependencies": {
+    "exports-loader": "^0.7.0",
+    "html-webpack-plugin": "^4.3.0",
+    "script-loader": "^0.7.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "zepto-webpack": "^1.2.1"
+  }
+}
