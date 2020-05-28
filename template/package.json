@@ -7,6 +7,10 @@
   "dependencies": {
     "pug-loader": "^2.4.0"
   },
+  "scripts": {
+    "dev": "npx webpack-dev-server",
+    "build": "webpack"
+  },
   "devDependencies": {
     "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",
