@@ -3,12 +3,18 @@
   "version": "2.0.0",
   "description": "qFlow 自用脚手架",
   "main": "index.js",
-  "repository": "https://github.com/qiushangzhe/qlow.git",
   "author": "邱上哲 <470542573@qq.com>",
   "license": "MIT",
   "private": true,
   "dependencies": {
     "inquirer": "^7.1.0",
     "ora": "^4.0.4"
+  },
+  "bin": {
+    "qlow": "main.js"
+},
+  "repository": {
+    "type": "git",
+    "url": "http://git@github.com:qiushangzhe/qlow.git"
   }
 }
