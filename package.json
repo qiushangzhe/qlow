@@ -28,7 +28,7 @@
         "browser-sync": "^2.18.13",
         "colors": "^1.1.2",
         "gulp": "^3.9.1",
-        "gulp-autoprefixer": "^4.0.0",
+        "gulp-autoprefixer": "^8.0.0",
         "gulp-concat": "^2.6.1",
         "gulp-html-tpl": "^0.5.2",
         "gulp-less": "^3.3.2",
